@@ -26,7 +26,7 @@ public class FoodController {
 	
 	@GetMapping("getByFoodNameContains")
 	public List<Food> getByFoodNameContains(String foodName){
-		return this.foodService.getByFoodNameContains(foodName);
+		return this.foodService.getByFoodNameContainsIgnoreCase(foodName);
 	}
 	
 	@GetMapping("getByFoodNameContainsAndPageNoPageSize")

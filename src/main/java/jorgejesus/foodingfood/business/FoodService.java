@@ -8,7 +8,7 @@ public interface FoodService {
 
 	public List<Food> getAll(int pageNo, int pageSize);
 	
-	public List<Food> getByFoodNameContains(String foodName);
+	public List<Food> getByFoodNameContainsIgnoreCase(String foodName);
 	
 	public List<Food> getByFoodNameContainsAndPageNoPageSize(String foodName, int pageNo, int pageSize);
 	

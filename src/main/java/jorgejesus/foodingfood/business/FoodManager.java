@@ -24,8 +24,8 @@ public class FoodManager implements FoodService{
 		return foodDao.findAll(page).getContent();
 	}
 	
-	public List<Food> getByFoodNameContains(String foodName){
-		return this.foodDao.getByFoodNameContains(foodName);
+	public List<Food> getByFoodNameContainsIgnoreCase(String foodName){
+		return this.foodDao.getByFoodNameContainsIgnoreCase(foodName);
 	}
 	
 	public List<Food> getByFoodNameContainsAndPageNoPageSize(String foodName, int pageNo, int pageSize){
