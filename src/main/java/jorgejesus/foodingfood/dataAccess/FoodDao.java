@@ -14,7 +14,7 @@ public interface FoodDao extends JpaRepository<Food, Integer>{
 	List<Food> getByFoodNameContainsIgnoreCase (String foodName);
 	
 
-	List<Food> getByFoodNameContainsIgnoreCas (String foodName, Pageable page);
+	List<Food> getByFoodNameContainsIgnoreCase (String foodName, Pageable page);
 	
 
 }
