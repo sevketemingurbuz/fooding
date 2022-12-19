@@ -31,7 +31,7 @@ public class FoodManager implements FoodService{
 	public List<Food> getByFoodNameContainsAndPageNoPageSize(String foodName, int pageNo, int pageSize){
 		pageNo= pageNo-1;
 		Pageable pageable = PageRequest.of(pageNo, pageSize);
-		List<Food> page = this.foodDao.getByFoodNameContains(foodName, pageable);
+		List<Food> page = this.foodDao.getByFoodNameContainsIgnoreCase(foodName, pageable);
 		return page;
 	}
 	
